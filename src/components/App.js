@@ -35,6 +35,10 @@ class App extends Component {
             })
         })
     }
+
+    componentWillUnmount(){
+        clearInterval(this.intervalId)
+    }
     render() {
 
         
