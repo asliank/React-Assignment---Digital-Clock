@@ -41,7 +41,7 @@ class App extends Component {
             this.setState({
                 time:new Date()
             })
-        })
+        }, 1 * 1000)
     }
 
     componentWillUnmount(){
