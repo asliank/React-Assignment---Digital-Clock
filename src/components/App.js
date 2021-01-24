@@ -28,7 +28,7 @@ class App extends Component {
         const minutesString = this.padNumberToTwoDigits(minutes)
         const secondString = this.padNumberToTwoDigits(seconds)
 
-        const timeString = `${hourString}:${minutesString}:${secondString} ${amOrPm}`
+        const timeString = `${hourFormat}:${minutesString}:${secondString} ${amOrPm}`
         return timeString
     }
 
