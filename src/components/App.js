@@ -7,6 +7,14 @@ class App extends Component {
         this.state = {  time: new Date()}
         this.intervalId = null;
     }
+    
+    render() {
+        return(
+            <div className="Clock">
+               <h3 id="time">{this.getTimeString()}</h3>
+            </div>
+        )
+    }
     getTimeString() {
         const currTime = this.state.time
         const [hours,minutes,seconds] = [
@@ -38,15 +46,6 @@ class App extends Component {
 
     componentWillUnmount(){
         clearInterval(this.intervalId)
-    }
-    render() {
-
-        
-        return(
-            <div className="Clock">
-               <h3 id="time">{this.getTimeString()}</h3>
-            </div>
-        )
     }
 }
 
